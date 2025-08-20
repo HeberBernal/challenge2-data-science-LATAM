@@ -8,7 +8,8 @@ Mi análisis exploratorio reveló hallazgos importantes sobre el comportamiento 
 
 Tasa de Evasión: Descubrí que la tasa de Churn es del 26.5%, lo que representa una porción considerable de nuestra base de clientes y subraya la urgencia de actuar.
 <img width="917" height="617" alt="image" src="https://github.com/user-attachments/assets/094bb42c-2a3e-4b60-814c-6bb5f0ca348e" />
- Conteo exacto de clientes
+ 
+Conteo exacto de clientes
 Clientes que no se fueron : 5174
 Clientes que se fueron : 1869
 Total de clientes: 7043
