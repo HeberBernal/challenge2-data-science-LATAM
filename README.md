@@ -1,34 +1,32 @@
 📊 Análisis de Evasión de Clientes (Churn) - TelecomX LATAM
-Este repositorio contiene un proyecto de análisis de datos para enfrentar el problema de la evasión de clientes (o Churn) en una empresa de telecomunicaciones. El objetivo es identificar los factores clave que causan que los clientes cancelen sus servicios, para así poder desarrollar estrategias de retención efectivas y asegurar la fidelidad a largo plazo.
+Este repositorio contiene un proyecto de análisis de datos con el objetivo de identificar los factores que causan la evasión de clientes (Churn) en una empresa de telecomunicaciones.
+
+El análisis busca desarrollar estrategias efectivas de retención y asegurar la fidelidad a largo plazo de los clientes.
 
 Hallazgos Clave del Análisis
-El análisis exploratorio de datos reveló importantes patrones de comportamiento que pueden ayudarnos a reducir la tasa de evasión:
+La tasa de evasión es alta y se concentra en los clientes más nuevos.
 
-La Lealtad se Construye con el Tiempo: Descubrimos que los clientes más nuevos son los que tienen mayor probabilidad de irse. La lealtad aumenta significativamente a medida que un cliente permanece más tiempo con la empresa.
+Se identificó que el tiempo que el cliente lleva con la empresa es el factor más importante para predecir la evasión.
 
-Los Servicios Adicionales son Clave para la Retención: Los clientes que contratan servicios extra, como soporte técnico o seguridad en línea, muestran una tasa de Churn mucho menor. Estos servicios funcionan como "anclas" que mantienen a los clientes satisfechos y fieles.
+Los servicios adicionales como el soporte técnico y la seguridad en línea funcionan como "anclas" que aumentan la retención de clientes.
 
-Perfil del Cliente en Riesgo: Se identificó que un cliente con alto riesgo de evasión es aquel que lleva poco tiempo con nosotros y no ha contratado servicios de valor agregado.
+El perfil de cliente con mayor riesgo de evasión es aquel que tiene poco tiempo con la empresa y no ha contratado servicios de valor agregado.
 
 Tecnologías Utilizadas
-El análisis se llevó a cabo utilizando el siguiente stack de tecnologías:
+Python: Se utilizó como el lenguaje de programación principal para el análisis.
 
-Python: El lenguaje de programación principal.
+Pandas: Una librería clave para la manipulación, limpieza y análisis de la base de datos de manera eficiente.
 
-Pandas: Usado para manipular, limpiar y analizar la base de datos de manera eficiente.
+Jupyter Notebook: Fue el entorno interactivo donde se realizó todo el análisis, incluyendo el código y las visualizaciones.
 
-Jupyter Notebook: El entorno interactivo donde se realizó todo el análisis y la visualización de los datos.
-
-Matplotlib y Seaborn: Librerías de Python para crear los gráficos que validaron las conclusiones.
+Matplotlib y Seaborn: Librerías de Python utilizadas para crear los gráficos que validaron las conclusiones y hallazgos.
 
 Cómo Replicar el Análisis
-Puedes ejecutar este análisis en tu propia computadora de forma muy sencilla:
-
-Clona el repositorio usando el siguiente comando:
+Paso 1: Clona el repositorio. Puedes descargar el proyecto usando el siguiente comando en tu terminal:
 
 Bash
 
 git clone https://github.com/HeberBernal/challenge2-data-science-LATAM.git
-Abre el notebook TelecomX_LATAM.ipynb en tu entorno de Jupyter.
+Paso 2: Abre el notebook. Navega hasta la carpeta del proyecto y abre el archivo TelecomX_LATAM.ipynb en tu entorno de Jupyter.
 
-Ejecuta las celdas en orden para ver todo el proceso de análisis, desde la carga de datos hasta las conclusiones finales.
+Paso 3: Ejecuta las celdas. Corre cada una de las celdas de código en orden para ver todo el proceso del análisis, desde la carga de los datos hasta las conclusiones finales.
