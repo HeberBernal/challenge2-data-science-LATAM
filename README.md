@@ -1,5 +1,3 @@
-¡Entendido! Aquí tienes una versión más explicada del README que mantiene la sencillez pero añade más detalles sobre el proyecto.
-
 📊 Análisis de Evasión de Clientes (Churn) - TelecomX LATAM
 Este repositorio contiene un proyecto de análisis de datos para enfrentar el problema de la evasión de clientes (o Churn) en una empresa de telecomunicaciones. El objetivo es identificar los factores clave que causan que los clientes cancelen sus servicios, para así poder desarrollar estrategias de retención efectivas y asegurar la fidelidad a largo plazo.
 
