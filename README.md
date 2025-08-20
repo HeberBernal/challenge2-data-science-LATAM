@@ -1,55 +1,36 @@
-# challenge2-data-science-LATAM
-1. Introducción
-El objetivo de este análisis ha sido comprender el problema de la evasión de clientes, o "Churn", en TelecomX. A través de este proyecto, busqué identificar los factores y perfiles de clientes más propensos a cancelar su servicio, con el fin de proporcionar información valiosa para diseñar estrategias de retención efectivas.
+¡Entendido! Aquí tienes una versión más explicada del README que mantiene la sencillez pero añade más detalles sobre el proyecto.
 
-2. Limpieza y Tratamiento de Datos
-Mi primer paso fue preparar los datos para el análisis. Importé el archivo TelecomX_Data.json y, utilizando una función personalizada que creé, flatten_df, logré aplanar las estructuras de datos anidadas. Posteriormente, abordé la limpieza de variables críticas:
+📊 Análisis de Evasión de Clientes (Churn) - TelecomX LATAM
+Este repositorio contiene un proyecto de análisis de datos para enfrentar el problema de la evasión de clientes (o Churn) en una empresa de telecomunicaciones. El objetivo es identificar los factores clave que causan que los clientes cancelen sus servicios, para así poder desarrollar estrategias de retención efectivas y asegurar la fidelidad a largo plazo.
 
-Valores Ausentes: Convertí la columna account_Charges.Total a un tipo numérico, manejando correctamente los valores vacíos que causaban errores. También me aseguré de que no hubiera valores nulos en la variable objetivo CHURN.
+Hallazgos Clave del Análisis
+El análisis exploratorio de datos reveló importantes patrones de comportamiento que pueden ayudarnos a reducir la tasa de evasión:
 
-Renombramiento de Columnas: Renombré todas las columnas relevantes a un formato más claro y en español (ANTIGUEDAD_CLIENTE, CARGO_TOTAL, etc.).
+La Lealtad se Construye con el Tiempo: Descubrimos que los clientes más nuevos son los que tienen mayor probabilidad de irse. La lealtad aumenta significativamente a medida que un cliente permanece más tiempo con la empresa.
 
-Creación de Nuevas Características: Generé una nueva variable, Cuentas_Diarias, para explorar la relación entre el gasto diario y la evasión.
+Los Servicios Adicionales son Clave para la Retención: Los clientes que contratan servicios extra, como soporte técnico o seguridad en línea, muestran una tasa de Churn mucho menor. Estos servicios funcionan como "anclas" que mantienen a los clientes satisfechos y fieles.
 
-3. Análisis Exploratorio de Datos
-He realizado varios análisis para explorar la distribución de la evasión y sus patrones. Mis hallazgos más importantes son:
+Perfil del Cliente en Riesgo: Se identificó que un cliente con alto riesgo de evasión es aquel que lleva poco tiempo con nosotros y no ha contratado servicios de valor agregado.
 
-Tasa de Evasión General: Mi primer análisis, un gráfico de pastel, mostró que el 26.5% de nuestros clientes ha cancelado el servicio, lo que confirma que la evasión es un problema significativo.
+Tecnologías Utilizadas
+El análisis se llevó a cabo utilizando el siguiente stack de tecnologías:
 
-Análisis por Variables Categóricas: Los gráficos de barras y los resúmenes de tablas que generé me permitieron identificar las siguientes tendencias:
+Python: El lenguaje de programación principal.
 
-Contrato: Los clientes con contratos de Month-to-month tienen una tasa de evasión extremadamente alta, superando el 42%.
+Pandas: Usado para manipular, limpiar y analizar la base de datos de manera eficiente.
 
-Método de Pago: Aquellos que pagan con Electronic check tienen la mayor tasa de evasión, con un 45%.
+Jupyter Notebook: El entorno interactivo donde se realizó todo el análisis y la visualización de los datos.
 
-Servicio de Internet: Los clientes con Fiber optic se van con mucha más frecuencia que los de DSL.
+Matplotlib y Seaborn: Librerías de Python para crear los gráficos que validaron las conclusiones.
 
-Análisis por Variables Numéricas: Los histogramas me ayudaron a entender las diferencias entre los clientes que se quedaron y los que se fueron. Descubrí que los clientes que evaden tienen:
+Cómo Replicar el Análisis
+Puedes ejecutar este análisis en tu propia computadora de forma muy sencilla:
 
-Una antigüedad promedio mucho menor. La mayoría de las cancelaciones ocurren en los primeros meses.
+Clona el repositorio usando el siguiente comando:
 
-Cargos mensuales más altos en promedio.
+Bash
 
-Cargos totales más bajos en promedio, lo cual es lógico ya que no han estado con la empresa por mucho tiempo.
+git clone https://github.com/HeberBernal/challenge2-data-science-LATAM.git
+Abre el notebook TelecomX_LATAM.ipynb en tu entorno de Jupyter.
 
-4. Conclusiones e Insights
-Mis hallazgos confirman que la evasión no es un problema aleatorio. Los clientes que se van comparten un perfil muy claro:
-
-Son clientes recientes con contratos flexibles (mes a mes).
-
-Prefieren servicios de fibra óptica y pagan a través de cheque electrónico.
-
-A pesar de ser clientes nuevos, tienen un alto cargo mensual.
-
-Esto me lleva a pensar que los clientes nuevos, que optan por planes de alta velocidad y un método de pago menos estable, se sienten insatisfechos rápidamente y no tienen una razón para quedarse a largo plazo.
-
-5. Recomendaciones
-Basado en mi análisis, propongo las siguientes estrategias para reducir la evasión:
-
-Estrategia de Retención de Clientes Nuevos: Implementar un programa de seguimiento para los clientes con menos de 6 meses de antigüedad y cargos mensuales altos. Esto podría incluir llamadas de cortesía, descuentos en servicios o acceso a soporte premium.
-
-Promociones para Cambios de Contrato: Ofrecer incentivos atractivos (por ejemplo, descuentos o servicios gratuitos) a los clientes con contratos de Month-to-month para que migren a planes de un año o más.
-
-Optimización del Servicio de Fibra Óptica: Investigar posibles problemas técnicos o de rendimiento en el servicio de fibra óptica, ya que su alta tasa de evasión sugiere insatisfacción.
-
-Mejora en el Proceso de Pago: Analizar el método de Electronic check para identificar posibles fricciones o fallos que estén frustrando a los clientes.
+Ejecuta las celdas en orden para ver todo el proceso de análisis, desde la carga de datos hasta las conclusiones finales.
